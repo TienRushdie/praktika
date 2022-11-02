@@ -1,0 +1,34 @@
+﻿<Window x:Class="praktika.Add_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:praktika"
+        mc:Ignorable="d"
+        Title="Add_window" Height="172" Width="498" Background="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="83*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="Добавить строку" x:Name="R_add_b" Margin="243,15,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code SemiBold" Foreground="White" Visibility="Visible" BorderBrush="White" Height="118" FontSize="22" HorizontalAlignment="Left" Width="228" Click="R_add_b_Click" Grid.ColumnSpan="2" Grid.Column="1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFFF0a" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Margin="85,17,0,0" TextWrapping="Wrap" Text="" Name="T1" VerticalAlignment="Top" Width="153" FontFamily="Cascadia Mono SemiBold" Foreground="Black" Height="26" Grid.Column="1"/>
+        <Label Content="Tab Number" HorizontalAlignment="Left" Margin="13,17,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiBold" Foreground="#FFF3FF00" Height="26" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="85,48,0,0" TextWrapping="Wrap" Text="" Name="T2" VerticalAlignment="Top" Width="153" FontFamily="Cascadia Mono SemiBold" Foreground="Black" Height="26" Grid.Column="1"/>
+        <Label Content="FIO" HorizontalAlignment="Left" Margin="13,48,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiBold" Foreground="#FFF3FF00" Height="26" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="85,78,0,0" TextWrapping="Wrap" Text="" Name="T3" VerticalAlignment="Top" Width="153" FontFamily="Cascadia Mono SemiBold" Foreground="Black" Height="25" Grid.Column="1"/>
+        <Label Content="Experience" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiBold" Foreground="#FFF3FF00" Height="25" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="85,108,0,0" TextWrapping="Wrap" Text="" Name="T4" VerticalAlignment="Top" Width="153" FontFamily="Cascadia Mono SemiBold" Foreground="#FF000600" Height="25" Grid.Column="1"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="11,108,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiBold" Foreground="#FFF3FF00" Height="25" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
